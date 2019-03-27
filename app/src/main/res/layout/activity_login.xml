@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincolor"
+    tools:context="com.example.tavio_syrus_gblokpo.iai_vote.Login">
+<RelativeLayout
+    android:id="@+id/oo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/insr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textStyle="italic"
+        android:textSize="40dp"
+        android:textColor="#ffff"
+        android:text="CONNEXION"
+        android:layout_marginTop="50dp" />
+
+    <EditText
+        android:id="@+id/ETpseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/insr"
+        android:layout_marginTop="50dp"
+        android:textColorHint="#fff"
+        android:ems="10"
+        android:hint="Nom d'uilisateur"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Etpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETpseudo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:textColorHint="#fff"
+        android:hint="Mot de passe"
+        android:inputType="textPassword" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/chek"
+            android:layout_below="@+id/Etpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Sesouvenirdemoi"
+            android:textColor="#fff"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="21dp"
+            android:ems="10"/>
+
+
+    <Button
+        android:id="@+id/Valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/chek"
+        android:layout_marginTop="50dp"
+        android:onClick="valider"
+        android:background="@drawable/t_buttonrondlogin"
+        android:text="S'IDENTIFIER" />
+
+    <LinearLayout
+        android:layout_below="@+id/Valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/passoublier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="inscri"
+            android:text="MOT DE PASSE OUBLIE?"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="inscri"
+            android:text="@string/sinscrire"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+</ScrollView>

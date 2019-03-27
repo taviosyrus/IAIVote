@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tavio_syrus_gblokpo.iai_vote.UpadeProfil"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/tt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/ttCo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp">
+
+            <LinearLayout
+
+                android:background="@color/blurT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+                <com.example.tavio_syrus_gblokpo.iai_vote.Traitement.CircleImageView
+                    android:id="@+id/photo_util"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_ins_round">
+
+                </com.example.tavio_syrus_gblokpo.iai_vote.Traitement.CircleImageView>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/photo_util"
+        android:layout_alignEnd="@+id/photo_util">
+        <com.example.tavio_syrus_gblokpo.iai_vote.Traitement.CircleImageView
+            android:background="@drawable/btn_photo"
+            android:id="@+id/btn_photo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+                <TextView
+                    android:id="@+id/nomN"
+                    android:layout_marginTop="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="William snoe"
+                    android:textColor="#fff"
+                    android:textSize="21sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person_black_24dp"/>
+
+                <EditText
+                    android:id="@+id/nom1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="Nom"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_person_black_24dp"/>
+                <EditText
+                    android:id="@+id/prenom1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="Prenom"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_email_black_24dp" />
+
+                <EditText
+                    android:id="@+id/email1"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_cake_black_24dp"/>
+                <EditText
+                    android:id="@+id/datenaiss1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:inputType="date"
+                    android:hint="Date de naissance"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_phone_black_24dp"/>
+                <EditText
+                    android:id="@+id/tel1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:inputType="phone"
+                    android:hint="Telephone"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_add_location_black_24dp"/>
+                <EditText
+                    android:id="@+id/adresse1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:hint="Adresse"
+                    android:inputType="text"/>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/modifPro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/buttonsrond"
+                android:text="Modifier"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
+

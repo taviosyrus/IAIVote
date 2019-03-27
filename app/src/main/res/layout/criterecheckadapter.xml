@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/idC"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="Critere"
+                android:visibility="invisible"/>
+            <ScrollView
+                android:id="@+id/scrooooo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/libC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Critere"
+                    />
+            </ScrollView>
+
+
+            <RadioGroup
+                android:id="@+id/readiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_alignParentEnd="true"
+                android:checkedButton="@id/checkbox1"
+                android:layout_marginEnd="5dp">
+
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkbox2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkbox3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <CheckBox
+                    android:id="@+id/checkbox4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+
+            </RadioGroup>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

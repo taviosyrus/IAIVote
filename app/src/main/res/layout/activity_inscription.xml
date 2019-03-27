@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logincolor"
+    tools:context="com.example.tavio_syrus_gblokpo.iai_vote.Activity_Inscription">
+
+    <RelativeLayout
+        android:id="@+id/tttt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/insr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="INSCRIPTION"
+            android:textAllCaps="true"
+            android:textColor="#ffff"
+            android:textSize="30dp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/Etmatricule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/insr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:hint="Matricule"
+            android:inputType="textPersonName"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/Etpseudo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etmatricule"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Nom d'uilisateur"
+            android:inputType="textPersonName"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/Etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etpseudo"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/Etpassword1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etpassword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Confirmation"
+            android:inputType="textPassword"
+            android:textColorHint="#fff" />
+
+        <TextView
+            android:id="@+id/des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Etpassword1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:text="En cliquant sur S'inscrire, vous acceptez les  Conditions d'utilisation d'ATARO"
+            android:textAlignment="center"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/t_buttonrondlogin"
+            android:onClick="inscription"
+            android:text="S'incrire" />
+
+
+        <TextView
+            android:id="@+id/connexion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:onClick="conn"
+            android:text="@string/se_connecter_ici"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

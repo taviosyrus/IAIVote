@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tavio_syrus_gblokpo.iai_vote.VoteGri">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/te"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="@string/grille_d_evaluation_des_enseignements"/>
+
+        <LinearLayout
+            android:layout_below="@+id/te"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ty1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/ed"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/unite_d_enseignment_ue"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+            <EditText
+                android:id="@+id/ed1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/elements_constitutif_ec"
+                android:inputType="text"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ty1"
+            android:id="@+id/ty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/spi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <Spinner
+                android:layout_marginTop="10dp"
+                android:id="@+id/spi1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/commentaire"
+            android:layout_below="@+id/ty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Commentaire"
+            android:inputType="textPersonName"
+            android:textColorHint="#fff" />
+        <ExpandableListView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/commentaire"
+            android:id="@+id/expendListe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn">
+
+        </ExpandableListView>
+
+
+        <LinearLayout
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/annuler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/annuler"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/valider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/voter"
+                android:layout_weight="1"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerChart">
+        <item>Liste des Statistiques</item>
+        <item>toto</item>
+        <item>Liste des Statistiques</item>
+        <item>toto</item>
+        <item>Liste des Statistiques</item>
+
+    </string-array>
+</resources>
